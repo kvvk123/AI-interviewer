@@ -1,0 +1,299 @@
+{% extends 'homeheader.html' %}
+{% block content %}
+<section class="w3l-contact py-5" id="contact">
+    <div class="container py-md-5 py-4">
+        <div class="title-main text-center mx-auto mb-5" style="max-width:500px;">
+            <strong><p class="text-uppercase">Interview Analysis</p></strong>
+            <p class="text-uppercase">Video and Audio Analysis</p> 
+            <!-- <h3 class="title-style">Login With <span>Us</span></h3> -->
+        </div>
+        <div class="mx-auto" style="max-width:1000px">
+            <div class="row contact-block">
+               
+                     
+                            <!-- <div class="col-md-8 offset-md-2"> -->
+                                <!-- <form action="/clickvideoemotion" method="post">
+                                <br><br>
+                                    <div class="right-w3l">
+                                        <button type="submit" style="width:300px" class="btn btn-primary">Video emotion </button>
+                                    </div>
+                                </form>
+                            
+                        
+                    
+                       
+                            < <div class="col-md-8 offset-md-2"> -->
+                                <!-- <form action="/startspeechemotion" method="post">
+                                <br><br>
+                                    <div class="right-w3l">
+                                        <button type="submit" style="width:300px" class="btn btn-primary">Speech emotion </button>
+                                    </div>
+                                </form> --> 
+
+                                <form action="/audiovideoemotion" method="post">
+                                    <br><br>
+                                        <div class="right-w3l">
+                                            <button type="submit" style="width:300px" class="btn btn-primary">Audio Video Analysis</button>
+                                        </div>
+                                    </form>
+                            
+                        
+                        <!-- </div>
+                    </div> -->
+                           
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Answer the Following Questions ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            <form id="myform" action='' method='post'>
+                <h3 >when a project or assignment didn’t go as planned. How would you approach the situation differently in the future?</h3>
+                <input type="hidden" name="q" id="q" value="when a project or assignment didn’t go as planned. How would you approach the situation differently in the future?">
+                <br>
+                <h4>Answer in 10 seconds</h4>
+                <br>
+                <!-- <input type="text" name="ans" id="ans" placeholder="Enter the Answer" required=""> -->
+                <!-- <button type="button" id ="btn1" >Submit</button> -->
+            </form>
+        </div>
+    
+    </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Answer the Following Questions ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            <form action='' method='post'>
+                <h3 >What do you enjoy most and least about engineering?</h3>
+                <!-- <h4>Answer in 15 seconds</h4>
+                <input type="hidden" name="q1" id="q1" value="What do you enjoy most and least about engineering?"> -->
+                <br>
+                <h4>Answer in 10 seconds</h4>
+                <br>
+                <!-- <input type="text"  name="ans1" id="ans1" placeholder="Enter the Answer" required=""> -->
+                <!-- <button type="button" id ="btn2" >Submit</button> -->
+            </form>
+        </div>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> 
+        </div> -->
+    </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Answer the Following Questions ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            <form action='' method='post'>
+                <h3>Where do you see yourself five years from now?</h3>
+                <br>
+                <h4>Answer in 10 seconds</h4>
+                <br>
+                <!-- <input type="hidden" name="q2" id="q2" value="What is 14 + 4 ?"> -->
+                <!-- <input type="text"  name="ans2" id="ans2"  placeholder="Enter the Answer" required=""> -->
+                <!-- <button type="button" id ="btn3" >Submit</button> -->
+            </form>
+            
+        </div>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> 
+        </div> -->
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Answer the Following Questions ?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form action='' method='post'>
+                    <h3>What new engineering skills have you recently developed?</h3>
+                    <br>
+                    <h4>Answer in 10 seconds</h4>
+                    <br>
+                    <!-- <input type="hidden" name="q2" id="q2" value="What is 14 + 4 ?"> -->
+                    <!-- <input type="text"  name="ans2" id="ans2"  placeholder="Enter the Answer" required=""> -->
+                    <!-- <button type="button" id ="btn3" >Submit</button> -->
+                </form>
+                
+            </div>
+            <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button> 
+            </div> -->
+        </div>
+        </div>
+        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Answer the Following Questions ?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action='' method='post'>
+                        <h3>Why are you interested in a position with our company?</h3>
+                        <br>
+                        <h4>Answer in 10 seconds</h4>
+                        <br>
+                        <!-- <input type="hidden" name="q2" id="q2" value="What is 14 + 4 ?"> -->
+                        <!-- <input type="text"  name="ans2" id="ans2"  placeholder="Enter the Answer" required=""> -->
+                        <!-- <button type="button" id ="btn3" >Submit</button> -->
+                    </form>
+                    
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button> 
+                </div> -->
+            </div>
+            </div>
+</div>
+
+
+<!-- <script>
+    function showmodal(){
+        $("#exampleModal").modal('show');
+    }
+    function showmodal1(){
+        $("#exampleModal1").modal('show');
+    }
+    function showmodal2(){
+        $("#exampleModal2").modal('show');
+    }
+    function showmodal3(){
+        $("#exampleModal3").modal('show');
+    }
+    function showmodal4(){
+        $("#exampleModal4").modal('show');
+    }
+    function hidemodal(){
+        // let q="What is 4 + 4 ?";
+        // let ans;
+        // console.log("Failure")
+        // $.ajax({
+        // url: '/sendmail',
+        // type: 'post',
+        // data:{q:q,
+        //     ans:ans},
+        // success: function(result){
+        //         console.log(result);
+        //     },
+        // });
+		$("#exampleModal").modal('hide');
+		}
+    function hidemodal1(){
+        // let q="What is 6 + 4 ?";
+        // let ans;
+        // console.log("Failure")
+        // $.ajax({
+        // url: '/sendmail',
+        // type: 'post',
+        // data:{q:q,
+        //     ans:ans},
+        // success: function(result){
+        //         console.log(result);
+        //     },
+        // });
+        
+        $("#exampleModal1").modal('hide');
+    }
+    function hidemodal2(){
+        // let q="What is 14 + 4 ?";
+        // let ans;
+        // console.log("Failure")
+        // $.ajax({
+        // url: '/sendmail',
+        // type: 'post',
+        // data:{q:q,
+        //     ans:ans},
+        // success: function(result){
+        //         console.log(result);
+        //     },
+        // });
+        
+        $("#exampleModal2").modal('hide');
+    }
+    function hidemodal3(){
+        // let q="What is 14 + 4 ?";
+        // let ans;
+        // console.log("Failure")
+        // $.ajax({
+        // url: '/sendmail',
+        // type: 'post',
+        // data:{q:q,
+        //     ans:ans},
+        // success: function(result){
+        //         console.log(result);
+        //     },
+        // });
+        
+        $("#exampleModal3").modal('hide');
+    }
+    function hidemodal4(){
+        // let q="What is 14 + 4 ?";
+        // let ans;
+        // console.log("Failure")
+        // $.ajax({
+        // url: '/sendmail',
+        // type: 'post',
+        // data:{q:q,
+        //     ans:ans},
+        // success: function(result){
+        //         console.log(result);
+        //     },
+        // });
+        
+        $("#exampleModal4").modal('hide');
+    }
+    ID=setTimeout(showmodal,5000);
+    ID1=setTimeout(hidemodal,15000);
+    ID2=setTimeout(showmodal1,17000);
+    ID3=setTimeout(hidemodal1,27000);
+    ID4=setTimeout(showmodal2,30000);
+    ID5=setTimeout(hidemodal2,40000);
+    ID6=setTimeout(showmodal3,43000);
+    ID7=setTimeout(hidemodal3,53000);
+    ID8=setTimeout(showmodal4,57000);
+    ID9=setTimeout(hidemodal4,67000);
+
+   
+</script> -->
+
+
+
+
+
